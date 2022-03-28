@@ -6,6 +6,7 @@ color: #FFFFFF;
 padding: 1.5em;
 display: flex;
 justify-content: space-between;
+position: relative;
 }
 
 
@@ -21,3 +22,4 @@ i{
   align-items: center;
   justify-content: center;
 }
+
