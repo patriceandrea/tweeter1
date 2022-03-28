@@ -26,6 +26,7 @@ body {
 
  body {
   font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
  }
 
  span {
@@ -35,6 +36,9 @@ body {
  main{
    width: 90%;
   background-color:#f4f1ec;
-  text-align: center;
+  display: flex;
+  justify-content:center;
+ margin-left:5% ;
+margin-right: 5%;
  }
 

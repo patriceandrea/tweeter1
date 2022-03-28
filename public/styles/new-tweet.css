@@ -1,0 +1,38 @@
+button{
+  font-family:'Bungee', cursive;
+  color: white;
+  background-color:#4056A1  ;
+}
+
+output{
+font-family:'Bungee', cursive ;
+}
+
+.button-action{
+  display:flex;
+  justify-content: space-between;
+}
+
+textarea{
+  font-family: 'Source Sans Pro', sans-serif;
+  border-bottom:  0.25rem solid;
+  font-weight: bold;
+  width: 100%;
+  background-color: #f4f1ec;
+  border-right: 0px;
+  border-left: 0px;
+  border-top: 0px;
+}
+
+.text-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.new-tweet{
+  width: 100%;
+}
+
+
+
+
