@@ -42,14 +42,14 @@ footer i {
 }
 
 
-article.tweet{
+.tweet{
   display: block;
   margin: 40px 0px;
   padding: 10px;
   border: 4px solid;
 }
 
-article.tweet:hover{
+.tweet:hover{
   box-shadow: 10px 5px 5px rgba(33,33,33,.2);
 }
 
