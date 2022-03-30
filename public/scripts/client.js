@@ -35,6 +35,7 @@ $(document).ready(function () {
 
 
 
+
   const renderTweets = function (tweets) {
     const $tweetsContainer = $('.tweet-container').html('');
 
@@ -77,7 +78,24 @@ $(document).ready(function () {
     return $tweet;
   }
 
-
-
   renderTweets(data);
+
+
+
+  $("form").on("submit", function (event) {
+    console.log('Tweet is submitted!')
+    event.preventDefault();
+    const serializedData = $(this).serialize()
+
+
+    $.post("/tweets", serializedData, () => {
+      console.log(serializedData);
+    });
+
+
+  });
+
+
+
+
 });
