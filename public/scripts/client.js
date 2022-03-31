@@ -5,6 +5,7 @@
  */
 
 $(document).ready(function () {
+
   loadTweets();
 
 
@@ -16,11 +17,10 @@ $(document).ready(function () {
       $tweetsContainer.prepend($tweet);
     }
 
-  }
+  };
 
 
   const createTweetElement = function (tweet) {
-
 
     const tweetHTML = `
     <div class="tweet">
@@ -41,12 +41,10 @@ $(document).ready(function () {
         </span>
       </footer>
     </div>
-    `
-
-
+    `;
 
     return tweetHTML;
-  }
+  };
 
 
   function loadTweets() {
@@ -56,8 +54,7 @@ $(document).ready(function () {
         $('#tweet-text').val('');
         renderTweets(data);
       });
-  }
-
+  };
 
 
   $("form").on("submit", function (event) {

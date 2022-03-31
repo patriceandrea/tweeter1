@@ -39,7 +39,6 @@ footer {
 
 footer i {
   color: #4056A1;
-
 }
 
 
@@ -106,7 +105,6 @@ footer i {
   padding: 2px;
 }
 
-
 .error,
 .validation {
   border: 0.2em dotted;
@@ -117,7 +115,6 @@ footer i {
   width: 50%;
   padding: 10px 0px 10px 0;
 }
-
 
 .error-message-flex {
   display: flex;

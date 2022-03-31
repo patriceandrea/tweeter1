@@ -8,7 +8,8 @@ $(document).ready(function () {
 
     if (currentLength >= maxLength) {
       $(".counter").css("color", "red");
-    } else {
+    }
+    else {
       $(".counter").css("color", "#545149");
     }
 
