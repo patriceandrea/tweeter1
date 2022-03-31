@@ -2,6 +2,7 @@
 $(document).ready(function () {
   console.log('document is ready!');
 
+  //Countdowns Number of Characters when Tweet Box is being typed
   $("#tweet-text").keypress(function () {
     let maxLength = 140;
     let currentLength = $("#tweet-text").val().length;

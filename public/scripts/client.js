@@ -56,7 +56,7 @@ $(document).ready(function () {
       });
   };
 
-
+  //sends a post request or an error message once the Tweet button is clicked 
   $("form").on("submit", function (event) {
     event.preventDefault();
     const tweetText = $($(this).children()[0]).val();
@@ -83,6 +83,7 @@ $(document).ready(function () {
     }
   });
 
+  //prevents any Cross-site Scripting
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
