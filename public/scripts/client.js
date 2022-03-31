@@ -77,9 +77,10 @@ $(document).ready(function () {
       const serializedData = $(this).serialize();
       $('.error').hide();
       $('.validation').hide();
-
+      $('.counter').val(140);
       $.post("/tweets", serializedData, () => {
         loadTweets();
+
 
       });
     }
