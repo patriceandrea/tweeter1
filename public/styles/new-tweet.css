@@ -22,6 +22,7 @@ textarea{
   border-right: 0px;
   border-left: 0px;
   border-top: 0px;
+  margin-top: 2.5em;
 }
 
 .text-form{
@@ -102,4 +103,21 @@ color: rgb(255, 213, 0)
   height: 50px;
   width: 50px;
   padding: 2px;
+}
+
+
+.error, .validation{
+  border: 0.2em dotted;
+  color: red;
+  font-weight: bold;
+  display: none;
+  margin: 10px 10px 10px;
+width: 50%;
+padding: 10px 0px 10px 0;
+}
+
+
+.error-message-flex{
+  display: flex;
+justify-content: center;
 }

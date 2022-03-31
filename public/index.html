@@ -58,17 +58,23 @@
 
   <!-- Page-specific (main) content here -->
   <main class="container">
+    <!-- Make a new tweet -->
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
-      <form method="POST" action="/tweets/">
-        <textarea placeholder="What are you humming about?" name="text" id="tweet-text"></textarea>
+      <form method="POST" action="/tweets">
+        <textarea placeholder="What are you humming about?" tweet!" name="text" id="tweet-text"></textarea>
+        <div class="error-message-flex">
+          <div class="error"><i class="fa-solid fa-triangle-exclamation"></i>Too Long! Please Respect the Character
+            Limit<i class="fa-solid fa-triangle-exclamation"> </i></div>
+          <div class="validation"><i class="fa-solid fa-triangle-exclamation"></i>No Tweet Submitted!<i
+              class="fa-solid fa-triangle-exclamation"></i></div>
+        </div>
         <div class="button-action">
           <button type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
     </section>
-
+    <!-- Look at the posted tweets -->
     <article class="tweet-container">
       <div class="tweet">
         <header class="tweet-header">

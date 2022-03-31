@@ -61,20 +61,22 @@ $(document).ready(function () {
 
 
   $("form").on("submit", function (event) {
+    event.preventDefault();
     const tweetText = $($(this).children()[0]).val();
 
     if (tweetText.length > 140) {
-      alert('You have excedded character limit!')
+      $('.error').slideDown();
     }
     else if (tweetText === '') {
-      alert('You need to submit a tweet!')
+      $('.validation').slideDown();
 
     }
     else {
       console.log('Tweet is submitted!')
-      event.preventDefault();
-      const serializedData = $(this).serialize();
 
+      const serializedData = $(this).serialize();
+      $('.error').hide();
+      $('.validation').hide();
 
       $.post("/tweets", serializedData, () => {
         loadTweets();
