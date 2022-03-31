@@ -9,8 +9,8 @@ $(document).ready(function () {
 
 
   const renderTweets = function (tweets) {
-    const $tweetsContainer = $('.tweet-container')
-
+    const $tweetsContainer = $('.tweet-container');
+    $tweetsContainer.empty();
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $tweetsContainer.prepend($tweet);
