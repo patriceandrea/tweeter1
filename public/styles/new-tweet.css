@@ -1,19 +1,19 @@
-button{
-  font-family:'Bungee', cursive;
+button {
+  font-family: 'Bungee', cursive;
   color: white;
-  background-color:#4056A1  ;
+  background-color: #4056A1;
 }
 
-output{
-font-family:'Bungee', cursive ;
+output {
+  font-family: 'Bungee', cursive;
 }
 
-.button-action{
-  display:flex;
+.button-action {
+  display: flex;
   justify-content: space-between;
 }
 
-textarea{
+textarea {
   font-family: 'Source Sans Pro', sans-serif;
   border-bottom: 0.25rem solid;
   font-weight: bold;
@@ -25,13 +25,13 @@ textarea{
   margin-top: 2.5em;
 }
 
-.text-form{
+.text-form {
   display: flex;
   flex-direction: column;
 }
 
 
-footer{
+footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -39,66 +39,67 @@ footer{
 
 footer i {
   color: #4056A1;
-  
+
 }
 
 
-.tweet{
+.tweet {
   display: block;
   margin: 40px 0px;
   padding: 10px;
   border: 4px solid;
 }
 
-.tweet:hover{
-  box-shadow: 10px 5px 5px rgba(33,33,33,.2);
+.tweet:hover {
+  box-shadow: 10px 5px 5px rgba(33, 33, 33, .2);
 }
 
-.tweet-header{
+.tweet-header {
   background-color: #f4f1ec;
   background-image: none;
   padding: 8px;
 }
 
-.tweet-header:after{
-content:"";
-display:table;
-clear: both;
+.tweet-header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.tweet-name{
+.tweet-name {
   float: left;
   font-size: 24px;
   font-weight: 300;
   margin: 10px 0px 0px 10px;
 }
-.tweet-handler{
+
+.tweet-handler {
   float: right;
   font-size: 24px;
   color: rgba(211, 208, 208, 0.838);
   margin: 10px 0px 0px 10px;
 }
 
-.tweet-body{
+.tweet-body {
   word-wrap: break-word;
   text-align: start;
   font-weight: bold;
 }
 
-.tweet-footer{
+.tweet-footer {
   border-top: 4px solid black;
   padding: 0.5em;
 }
 
-.icons-footer{
+.icons-footer {
   float: right;
 }
 
-.icons-footer i:hover{
-color: rgb(255, 213, 0)
+.icons-footer i:hover {
+  color: rgb(255, 213, 0)
 }
 
-.tweet-avatar{
+.tweet-avatar {
   float: left;
   height: 50px;
   width: 50px;
@@ -106,18 +107,19 @@ color: rgb(255, 213, 0)
 }
 
 
-.error, .validation{
+.error,
+.validation {
   border: 0.2em dotted;
   color: red;
   font-weight: bold;
   display: none;
   margin: 10px 10px 10px;
-width: 50%;
-padding: 10px 0px 10px 0;
+  width: 50%;
+  padding: 10px 0px 10px 0;
 }
 
 
-.error-message-flex{
+.error-message-flex {
   display: flex;
-justify-content: center;
+  justify-content: center;
 }

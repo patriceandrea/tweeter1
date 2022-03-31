@@ -36,6 +36,9 @@
   <script defer type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 </head>
 
+
+
+
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
@@ -46,57 +49,58 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="header">
-    <div>
-      <img src="/images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h2>Your Name</h2>
-    </div>
-  </header>
-
   <!-- Page-specific (main) content here -->
   <main class="container">
-    <!-- Make a new tweet -->
-    <section class="new-tweet">
-      <form method="POST" action="/tweets">
-        <textarea placeholder="What are you humming about?" tweet!" name="text" id="tweet-text"></textarea>
-        <div class="error-message-flex">
-          <div class="error"><i class="fa-solid fa-triangle-exclamation"></i>Too Long! Please Respect the Character
-            Limit<i class="fa-solid fa-triangle-exclamation"> </i></div>
-          <div class="validation"><i class="fa-solid fa-triangle-exclamation"></i>No Tweet Submitted!<i
-              class="fa-solid fa-triangle-exclamation"></i></div>
-        </div>
-        <div class="button-action">
-          <button type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-    </section>
-    <!-- Look at the posted tweets -->
-    <article class="tweet-container">
-      <div class="tweet">
-        <header class="tweet-header">
-          <img class="tweet-avatar" src="https://i.imgur.com/nlhLi3I.png" />
-          <h2 class="tweet-name">MyName</h2>
-          <h2 class="tweet-handler">@myName</h2>
-        </header>
-        <div class="tweet-body">
-          <p>This is my Tweet! tweet!tweet!</p>
-        </div>
-        <footer class="tweet-footer">
-          <small class="footer-days">10 days ago</small>
-          <span class="icons-footer">
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-repeat"></i>
-            <i class="fa-solid fa-heart"></i>
-          </span>
-        </footer>
+    <!-- Header -->
+    <header class="header">
+      <div>
+        <img src="/images/profile-hex.png">
       </div>
-    </article>
+      <br>
+      <div>
+        <h2>Your Name</h2>
+      </div>
+    </header>
 
+    <!-- Make a new tweet -->
+    <div class="content-container">
+      <section class="new-tweet">
+        <form method="POST" action="/tweets">
+          <textarea placeholder="What are you humming about?" tweet!" name="text" id="tweet-text"></textarea>
+          <div class="error-message-flex">
+            <div class="error"><i class="fa-solid fa-triangle-exclamation"></i>Too Long! Please Respect the Character
+              Limit<i class="fa-solid fa-triangle-exclamation"> </i></div>
+            <div class="validation"><i class="fa-solid fa-triangle-exclamation"></i>No Tweet Submitted!<i
+                class="fa-solid fa-triangle-exclamation"></i></div>
+          </div>
+          <div class="button-action">
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>
+      <!-- Look at the posted tweets -->
+      <article class="tweet-container">
+        <div class="tweet">
+          <header class="tweet-header">
+            <img class="tweet-avatar" src="https://i.imgur.com/nlhLi3I.png" />
+            <h2 class="tweet-name">MyName</h2>
+            <h2 class="tweet-handler">@myName</h2>
+          </header>
+          <div class="tweet-body">
+            <p>This is my Tweet! tweet!tweet!</p>
+          </div>
+          <footer class="tweet-footer">
+            <small class="footer-days">10 days ago</small>
+            <span class="icons-footer">
+              <i class="fa-solid fa-flag"></i>
+              <i class="fa-solid fa-repeat"></i>
+              <i class="fa-solid fa-heart"></i>
+            </span>
+          </footer>
+        </div>
+      </article>
+    </div>
   </main>
 
 

@@ -6,7 +6,10 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -24,22 +27,47 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- body {
+body {
   font-family: 'Source Sans Pro', sans-serif;
   text-align: center;
- }
-
- span {
-   font-family:'Bungee', cursive;
- }
-
- main{
-   width: 90%;
-  background-color:#f4f1ec;
   display: flex;
-  justify-content:center;
   flex-direction: column;
- margin-left:5% ;
-margin-right: 5%;
- }
+  align-items: center;
+  justify-content: center;
+}
 
+span {
+  font-family: 'Bungee', cursive;
+}
+
+main {
+  width: 100%;
+  background-color: #f4f1ec;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Desktop Layout  */
+@media only screen and (min-width: 1024px) {
+  header.header {
+    width: 40%;
+    display: flex;
+    margin-right: 8em;
+    margin-left: 2em;
+
+  }
+
+  .container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2em;
+  }
+}
